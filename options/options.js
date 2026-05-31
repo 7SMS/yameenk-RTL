@@ -64,7 +64,7 @@ function applyLanguage(l) {
   const s = STRINGS[l] || STRINGS.ar;
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.dataset.i18n;
-    if (s[key] !== undefined) el.innerHTML = s[key];
+    if (s[key] !== undefined) el.textContent = s[key];
   });
   document.documentElement.dir  = l === "ar" ? "rtl" : "ltr";
   document.documentElement.lang = l;
