@@ -5,7 +5,7 @@
 [![Firefox](https://img.shields.io/badge/Firefox-109%2B-FF7139?logo=firefox-browser&logoColor=white)](https://addons.mozilla.org)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-7c3aed)](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
-[![Made by 7SM](https://img.shields.io/badge/Made%20by-7SM-7c3aed)](https://github.com/7SM)
+[![Made by 7SMS](https://img.shields.io/badge/Made%20by-7SMS-7c3aed)](https://github.com/7SMS)
 
 **إصلاح ذكي لاتجاه النص العربي في مواقع الذكاء الاصطناعي**  
 *Smart Arabic RTL fix for AI chat sites · zero layout breakage · zero data collection*
@@ -141,6 +141,6 @@ MIT · Copyright (c) 2026 7SM · انظر [LICENSE](LICENSE)
 
 <div align="center">
 
-**تطوير [7SM](https://github.com/7SM)** · إذا أفادتك الإضافة ضع ⭐
+**تطوير [7SM](https://github.com/7SMS)** · إذا أفادتك الإضافة ضع ⭐
 
 </div>
