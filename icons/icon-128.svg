@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- خلفية زرقاء داكنة -->
+  <rect width="48" height="48" rx="12" fill="url(#bg)"/>
+  <!-- بريق علوي -->
+  <rect width="48" height="24" rx="10" fill="url(#shine)"/>
+
+  <!-- حرف ي (يمينك) -->
+  <text x="29" y="21"
+        text-anchor="middle"
+        font-family="'Segoe UI','Tahoma','Arial Unicode MS',sans-serif"
+        font-size="17" font-weight="700"
+        fill="#ffffff" opacity="0.97">ي</text>
+
+  <!-- خطوط نصية RTL (من اليمين لليسار) -->
+  <line x1="39" y1="31" x2="9"  y2="31"
+        stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity="0.90"/>
+  <line x1="39" y1="38" x2="19" y2="38"
+        stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- سهم RTL (رأس السهم على اليسار) -->
+  <path d="M14 27 L8 31 L14 35"
+        stroke="#60a5fa" stroke-width="2.4" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

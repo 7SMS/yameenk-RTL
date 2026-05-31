@@ -1,0 +1,249 @@
+/* ════════════════════════════════════════════════
+   يمينك — Popup Styles (Dark Blue Professional)
+   ════════════════════════════════════════════════ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg:          #070d1c;
+  --bg-header:   #0a1428;
+  --bg-card:     #0d1831;
+  --bg-card-2:   #091325;
+  --border:      #162444;
+  --border-glow: rgba(37, 99, 235, 0.50);
+  --accent:      #2563eb;
+  --accent-lt:   #60a5fa;
+  --accent-glow: rgba(37, 99, 235, 0.15);
+  --text-1:      #e2eaf8;
+  --text-2:      #7b9cc8;
+  --text-3:      #344b72;
+  --green:       #22c55e;
+  --yellow:      #f59e0b;
+  --radius:      10px;
+  --radius-sm:   6px;
+}
+
+body {
+  width: 300px;
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: 'Segoe UI', 'Tahoma', system-ui, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  direction: rtl;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* ══ Header ══════════════════════════════════════ */
+
+.header {
+  background: var(--bg-header);
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background-image: linear-gradient(160deg,
+    rgba(37,99,235,0.12) 0%,
+    transparent 60%);
+}
+
+.header-logo { display: flex; align-items: center; gap: 10px; }
+
+.logo-icon {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(37,99,235,0.35);
+}
+
+.logo-name {
+  display: block;
+  font-size: 17px; font-weight: 700;
+  color: var(--text-1);
+  letter-spacing: 0.3px;
+}
+
+.logo-sub {
+  display: block;
+  font-size: 10.5px;
+  color: var(--text-2);
+  margin-top: 1px;
+}
+
+/* ══ Site bar ════════════════════════════════════ */
+
+.site-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background: var(--bg-card-2);
+  border-bottom: 1px solid var(--border);
+  min-height: 36px;
+}
+
+.site-label { font-size: 11px; color: var(--text-3); }
+
+.site-name {
+  font-size: 12.5px; font-weight: 500;
+  color: var(--accent-lt);
+  max-width: 175px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* ══ Content ═════════════════════════════════════ */
+
+.content {
+  padding: 10px;
+  display: flex; flex-direction: column; gap: 7px;
+}
+
+/* ══ Card base ═══════════════════════════════════ */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 11px 13px;
+  transition: border-color .2s, background .2s;
+}
+
+/* ══ Toggle card ═════════════════════════════════ */
+
+.toggle-card {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  cursor: pointer; gap: 10px;
+}
+
+.toggle-card:hover { background: #10203e; }
+
+.toggle-card.is-active {
+  border-color: var(--border-glow);
+  background: var(--accent-glow);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.2) inset;
+}
+
+.toggle-info { flex: 1; min-width: 0; }
+
+.toggle-title {
+  display: block;
+  font-size: 14px; font-weight: 600;
+  color: var(--text-1);
+}
+
+.toggle-status {
+  display: block;
+  font-size: 11.5px; color: var(--text-3);
+  margin-top: 3px; transition: color .2s;
+}
+
+.toggle-status.on { color: #86efac; }
+
+/* ── Toggle switch ─────────────────────────────── */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px; height: 26px;
+  flex-shrink: 0; cursor: pointer;
+  direction: ltr;
+}
+
+.switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+
+.slider {
+  position: absolute; inset: 0;
+  background: #0e2040;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  transition: background .25s, border-color .25s;
+}
+
+.slider::before {
+  content: '';
+  position: absolute;
+  width: 18px; height: 18px;
+  left: 3px; top: 3px;
+  background: #2d4a7a;
+  border-radius: 50%;
+  transition: transform .25s cubic-bezier(.4,0,.2,1), background .25s, box-shadow .25s;
+}
+
+.switch input:checked + .slider {
+  background: rgba(37, 99, 235, 0.22);
+  border-color: var(--accent);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(37,99,235,0.65);
+}
+
+/* ══ Shortcuts card ══════════════════════════════ */
+
+.shortcuts-card {
+  padding: 9px 13px;
+  background: var(--bg-card-2);
+  display: flex; flex-direction: column; gap: 6px;
+}
+
+.shortcut-row {
+  display: flex; align-items: center;
+  justify-content: space-between;
+}
+
+.shortcut-label { font-size: 11.5px; color: var(--text-3); }
+
+.keys { display: flex; align-items: center; gap: 3px; }
+
+kbd {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  background: #0d1e3c;
+  border: 1px solid #1d3460;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 1px 7px;
+  font-family: 'Segoe UI', monospace;
+  font-size: 11px;
+  color: var(--accent-lt);
+  min-width: 28px;
+}
+
+.plus { font-size: 11px; color: var(--text-3); margin: 0 1px; }
+
+/* ══ Footer ══════════════════════════════════════ */
+
+.footer {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px 10px;
+  border-top: 1px solid var(--border);
+  background: #050a14;
+}
+
+.privacy-badge {
+  display: flex; align-items: center;
+  gap: 5px;
+  font-size: 10.5px; color: var(--text-3);
+}
+
+.footer-end { display: flex; align-items: center; gap: 7px; }
+
+.icon-btn {
+  display: flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--accent-lt);
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+}
+
+.icon-btn:hover {
+  background: var(--accent-glow);
+  border-color: var(--border-glow);
+}
+
+.version { font-size: 10px; color: var(--text-3); }

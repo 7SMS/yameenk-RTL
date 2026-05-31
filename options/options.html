@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إعدادات يمينك</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="../icons/icon-48.svg" alt="" class="logo-icon">
+        <div>
+          <span class="logo-name" data-i18n="appName">يمينك</span>
+          <span class="logo-sub"  data-i18n="settings">الإعدادات المتقدمة</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- معاينة مباشرة -->
+    <section class="card">
+      <h2 class="card-title" data-i18n="livePreview">معاينة مباشرة</h2>
+      <div class="preview-box" id="previewBox">
+        <p class="preview-arabic">مرحباً! هذه معاينة مباشرة للإعدادات.</p>
+        <p class="preview-ltr" dir="ltr">Hello! This is a live preview.</p>
+        <p class="preview-arabic">كيف يمكنني مساعدتك اليوم؟</p>
+        <code class="preview-code" dir="ltr">const code = "stays LTR always";</code>
+      </div>
+    </section>
+
+    <!-- تباعد الأسطر -->
+    <section class="card">
+      <h2 class="card-title" data-i18n="lineSpacing">تباعد الأسطر</h2>
+      <p class="card-desc" data-i18n="lineSpacingDesc">يتحكم في المسافة بين أسطر النص العربي</p>
+      <div class="btn-group" role="group">
+        <button class="seg-btn"        data-setting="lineSpacing" data-value="compact"     data-i18n="compact">مُدمج</button>
+        <button class="seg-btn active" data-setting="lineSpacing" data-value="normal"      data-i18n="normal">عادي</button>
+        <button class="seg-btn"        data-setting="lineSpacing" data-value="comfortable" data-i18n="comfortable">مريح</button>
+      </div>
+    </section>
+
+    <!-- الاختصارات -->
+    <section class="card">
+      <h2 class="card-title" data-i18n="shortcuts">اختصارات لوحة المفاتيح</h2>
+      <table class="shortcuts-table">
+        <tbody>
+          <tr>
+            <td data-i18n="toggleShortcut">تفعيل / إلغاء الإصلاح</td>
+            <td class="keys"><kbd>Alt</kbd> + <kbd>G</kbd></td>
+          </tr>
+          <tr>
+            <td data-i18n="popupShortcut">فتح نافذة يمينك</td>
+            <td class="keys"><kbd>Alt</kbd> + <kbd>O</kbd></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <span>يمينك v1.0.0 · تطوير <strong>7SM</strong></span>
+    <span class="footer-sep">·</span>
+    <span data-i18n="privacyNote">لا تُجمع أي بيانات</span>
+  </footer>
+
+  <script src="options.js"></script>
+</body>
+</html>
