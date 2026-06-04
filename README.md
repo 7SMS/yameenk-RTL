@@ -2,13 +2,17 @@
 
 <img src="screenshots/banner.png" width="100%" alt="يمينك Yameenk Arabic RTL Fix">
 
-[![Firefox](https://img.shields.io/badge/Firefox-109%2B-FF7139?logo=firefox-browser&logoColor=white)](https://addons.mozilla.org)
+[![Firefox](https://img.shields.io/badge/Firefox-109%2B-FF7139?logo=firefox-browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/%D9%8A%D9%85%D9%8A%D9%86%D9%83-arabic-rtl-fix/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-7c3aed)](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
 [![Made by 7SMS](https://img.shields.io/badge/Made%20by-7SMS-7c3aed)](https://github.com/7SMS)
 
 **إصلاح ذكي لاتجاه النص العربي في مواقع الذكاء الاصطناعي**  
 *Smart Arabic RTL fix for AI chat sites · zero layout breakage · zero data collection*
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/%D9%8A%D9%85%D9%8A%D9%86%D9%83-arabic-rtl-fix/">
+  <img src="https://img.shields.io/badge/Get%20it%20on-Firefox%20Add--ons-FF7139?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Get يمينك on Firefox Add-ons">
+</a>
 
 </div>
 
