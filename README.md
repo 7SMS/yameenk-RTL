@@ -2,7 +2,7 @@
 
 <img src="screenshots/banner.png" width="100%" alt="يمينك Yameenk Arabic RTL Fix">
 
-[![Firefox](https://img.shields.io/badge/Firefox-109%2B-FF7139?logo=firefox-browser&logoColor=white)](https://addons.mozilla.org)
+[![Firefox](https://img.shields.io/badge/Firefox-109%2B-FF7139?logo=firefox-browser&logoColor=white)]([https://addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/يمينك-arabic-rtl-fix/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-7c3aed)](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
 [![Made by 7SMS](https://img.shields.io/badge/Made%20by-7SMS-7c3aed)](https://github.com/7SMS)
